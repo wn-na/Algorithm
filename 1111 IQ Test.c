@@ -1,5 +1,5 @@
 #ifdef SHORTCODE
-q[99],i,a,b;main(k){for(scanf("%d",&k);i<k;scanf("%d",q+i++));for(a=q[1]-*q?(q[2]-q[1])/(q[1]-*q):a;--i>0;q[i]-q[i-1]*a-b?i=0:0)b=q[1]-a**q;printf(--k<2?k?*q-q[1]?"A":"%d":"A":i?"B":"%d",k<2?*q:q[k-1]*a+b);}
+q[99],i,a,b,e;main(k){for(gets(&k);~scanf("%d",q+i++););for(k=--i,a=q[1]-*q?(q[2]-q[1])/(q[1]-*q):a;--i;q[i]-q[i-1]*a-b?e=1:0)b=q[1]-a**q;printf(k<3?k-1?*q-q[1]?"A":"%d":"A":e?"B":"%d",k<3?*q:q[k-1]*a+b);}
 #endif
 #ifdef NORMAL
 #include <stdio.h>
