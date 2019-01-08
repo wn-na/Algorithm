@@ -1,1 +1,0 @@
-x,y;main(z){scanf("%d%d",&x,&y);z=99-y*100l/x;printf("%.f",z<1?-1:.49+1e2*(x-y)/z-x);}
