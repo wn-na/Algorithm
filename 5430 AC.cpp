@@ -23,7 +23,7 @@ int main(){
 		getchar();
 		getchar();
 		bool type = false, isEmpty = false;
-        int len = strlen(command);
+        	int len = strlen(command);
 		for(int i = 0; i < len; i++){
 			if(command[i] == 'R'){
 				type = !type;
@@ -42,12 +42,12 @@ int main(){
 			int size = dq.size();
 			if(type == false){
 				for(int i = 0; i < size; ++i, i < size?printf(","):0){
-	        		printf("%d",dq[i]);
-	    		}
+	        			printf("%d",dq[i]);
+	    			}
 			}else{
 				for(int i = size - 1; i >= 0; --i, i >= 0?printf(","):0){
-	        		printf("%d",dq[i]);
-	    		}
+	        			printf("%d",dq[i]);
+	    			}
 			}
 			printf("]\n");
 		}else{
