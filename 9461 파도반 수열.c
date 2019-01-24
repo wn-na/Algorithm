@@ -4,10 +4,10 @@ long long int arr[103] = {0,1,1,1};
 
 int main(){
     int i, t;
-    for(i = 4; i < 102; i++) arr[i] = arr[i-2] + arr[i-3];
+    for(i = 4; i < 102; i++) arr[i] = arr[i-2] + arr[i-3]; // arr[i] = arr[i-1] + arr[i-5];
     scanf("%d",&t);
     for(;t--;){
-        scanf("%d",&i);
-        printf("%lld\n",arr[i]);
+        scanf("%d", &i);
+        printf("%lld\n", arr[i]);
     }
 }
