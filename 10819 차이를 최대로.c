@@ -11,11 +11,15 @@ int main(void) {
 		scanf("%d ",&arr[i]);
 		arrt[i]=arr[i];
 	}
+	// a
 	qsort(arr+1,n,sizeof(int),func);
+	// b
 	qsort(arrt+1,n,sizeof(int),funt);
 	int sum = 0, sumt = 0;
 	if(n % 2){
+		// arrk : am b1 a1 b2 ... am-1 c
 		arrk[1] = arr[n/2];
+		// arrq : bm a1 b1 a2 ... bm-1 c
 		arrq[1] = arrt[n/2]; 
 		for(int i = 2, j = 1; i < n; i+=2,j++){
 			arrk[i]=arrt[j];
